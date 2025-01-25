@@ -1,0 +1,5 @@
+{
+    "namespace": "shopnavtweaks",
+    "setup": "setup.mjs",
+    "load": ["style.css"]
+  }

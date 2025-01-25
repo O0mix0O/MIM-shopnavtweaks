@@ -1,0 +1,5 @@
+#shop-container>div>div.col-12.sticky-div-mobile.px-0-mobile>div>div.bg-white.p-1.push.border-1x.border-bottom.border-white {
+    overflow-y: auto;
+    max-height: 40vh;
+    scrollbar-width: thin;
+}
