@@ -4,6 +4,7 @@ export function setup({ loadStylesheet }) {
   (function () {
     function addClickListeners() {
       const toggleButton = document.querySelector('.btn.btn-block.btn-light.d-flex.justify-content-between.align-items-center.text-combat-smoke.js-class-toggle-enabled');
+      const selectAllCategory = document.querySelector('#shop-tab-container > li:nth-child(1) > a');
 
       if (toggleButton) {
         const listItems = document.querySelectorAll('#shop-tab-container li');
@@ -14,6 +15,14 @@ export function setup({ loadStylesheet }) {
           };
         });
       }
+
+      if (selectAllCategory) {
+        selectAllCategory.onclick = function () {
+          shopMenu.showAllTabsButRaid();
+          toggleButton.click();
+        };
+      }
+
     }
 
     const interval = setInterval(() => {
